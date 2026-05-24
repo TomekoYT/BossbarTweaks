@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "tomeko.bossbartweaks.mixin",
+  "compatibilityLevel": "JAVA_${java_version}",
+  "mixins": [
+    "BossHealthOverlayMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

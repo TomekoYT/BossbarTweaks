@@ -62,7 +62,7 @@ tasks.processResources {
 
     inputs.properties(props)
 
-    filesMatching("fabric.mod.json") {
+    filesMatching(listOf("fabric.mod.json", "$mod_id.mixins.json")) {
         expand(props)
     }
 }

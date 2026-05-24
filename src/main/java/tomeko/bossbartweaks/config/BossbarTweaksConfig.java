@@ -32,13 +32,13 @@ public class BossbarTweaksConfig {
                                 .name(Component.literal("Scale"))
                                 .binding(defaults.scale, () -> config.scale, newVal -> config.scale = newVal)
                                 .controller(opt -> IntegerSliderControllerBuilder.create(opt)
-                                        .formatValue(value -> Component.literal(scale + "%"))
-                                                .range(0, 200)
-                                                .step(1))
-                                        .build())
+                                        .formatValue(value -> Component.literal(value + "%"))
+                                        .range(0, 200)
+                                        .step(1))
                                 .build())
+                        .build())
 
-                )).generateScreen(parent);
+        )).generateScreen(parent);
     }
 
     public static void register() {
