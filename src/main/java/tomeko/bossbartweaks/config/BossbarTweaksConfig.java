@@ -26,7 +26,7 @@ public class BossbarTweaksConfig {
                 .title(Component.literal(Constants.MOD_NAME))
 
                 .category(ConfigCategory.createBuilder()
-                        .name(Component.literal(Constants.MOD_NAME + "Config"))
+                        .name(Component.literal(Constants.MOD_NAME + " Config"))
 
                         .option(Option.<Integer>createBuilder()
                                 .name(Component.literal("Scale"))
